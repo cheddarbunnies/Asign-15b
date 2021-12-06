@@ -3,10 +3,24 @@ using namespace std;
 
 //Template
 template <class T>
+
 //Function half
 T half(T value) 
 {
+    T halfValues;
 
+    //Double and float are half the value
+    halfValues = value / 2;
+
+    //Integar return half the value rounded 
+    if (*typeid(value).name() == 'i') 
+    {
+        halfValues * 2;
+        halfValues++;
+    }
+    else {
+    return halfValues;
+    }
 }
 
 //Main Function
